@@ -1,0 +1,20 @@
+# Data (re-downloadable from CoCoRaHS / NCEI; kept local only)
+*.csv
+data/
+
+# Large artifacts
+legacy/ams2023/
+
+# Superseded repo shell (old github.com/dgilford/cocorahs)
+legacy/code/cocorahs/
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+.env
+
+# OS
+.DS_Store

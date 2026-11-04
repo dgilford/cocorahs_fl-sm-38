@@ -1,0 +1,3 @@
+# CoCoRaHS dashboard idea
+
+Idea: create a CoCoRaHS dashboard with my data using python and scheduled daily tasks that update and visualize the results. I need to download from the CoCoRaHS website each day using a script like this: <http://data.cocorahs.org/export/exportreports.aspx?ReportType=Daily&dtf=1&Format=CSV&State=FL&County=SM&ReportDateType=reportdate&StartDate=1/1/2021&EndDate=1/19/2021&TimesInGMT=False>, then retrieve the data specific to my station (FL-SM-38), and then plot the timeseries and distribution of the results (just for example). Here's an example, but for Windows (not Mac): <https://towardsdatascience.com/data-extraction-from-github-and-auto-run-or-schedule-python-script-9d1910239085> . I could do this on my desktop I suppose?
