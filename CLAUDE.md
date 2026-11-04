@@ -36,7 +36,7 @@ python get_cocorahs_FL-SM_today.py   # downloads data/cocorahs_FL-SM_01-01-2021_
 - Run them in this order: `download_dat_interactive` → `explore_cocorahs_data` → `cocorahs_ams2023`. They run top to bottom in the base anaconda env (Python 3.8, pandas 1.5.3) with `jupyter nbconvert --execute --inplace --allow-errors`. Expect the known errors: each notebook ends at a deliberate `break_here` stop cell, and the AMS notebook has unfinished cells (the multi-day spread, `pd.merge()` stub, `full_label`/`annual_precip_std` used before definition, Period plotting).
 - Each `%run get_cocorahs_FL-SM_today` re-downloads, and the `wget` package writes duplicates as `... (1).csv` instead of overwriting.
 - The legacy notebooks use APIs removed in pandas ≥ 2 (`Series.append`) and matplotlib (`MarkerSize=`). Expect to fix these on a modern env.
-- Trace handling differs between the notebooks and changes the results. With the 2026-11-04 data at FL-SM-38, rain days are 727/1710 when trace is filled as 0.001 (explore notebook) and 655/1710 when filled as 0.000 (AMS notebook).
+- Trace handling differs between the notebooks and changes the results. At FL-SM-38, filling trace as 0.001 (explore notebook) instead of 0.000 (AMS notebook) raises the rain-day fraction by about 4 percentage points.
 
 ## Data sources
 
