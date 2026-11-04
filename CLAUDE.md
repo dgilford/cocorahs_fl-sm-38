@@ -32,7 +32,7 @@ python get_cocorahs_FL-SM_today.py   # downloads data/cocorahs_FL-SM_01-01-2021_
 
 - Depends on the `wget` **PyPI package** (not the CLI), plus pandas/numpy/matplotlib; `haversine` and scipy for the nearby-station cells.
 - Notebooks (`explore_cocorahs_data.ipynb`, `cocorahs_ams2023.ipynb`) begin with `%run get_cocorahs_FL-SM_today`, then load the file **named by today's date**, so they only work on a day the download succeeded.
-- GHCN loads use hard-coded `/Users/dgilford/Dropbox (MIT)/...` paths. Point them at `data/ghcn/` instead.
+- GHCN loads use relative `./data/ghcn/*.csv` paths. These files are gitignored, so a fresh clone needs them re-ordered from NCEI.
 - The legacy notebooks use APIs removed in pandas ≥ 2 (`Series.append`) and matplotlib (`MarkerSize=`). Expect to fix these on a modern env.
 
 ## Data sources
