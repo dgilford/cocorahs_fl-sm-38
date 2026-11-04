@@ -4,6 +4,8 @@ Analysis of my at-home [CoCoRaHS](https://www.cocorahs.org/) rain gauge, **stati
 
 The goal is a self-updating dashboard: pull the data every day, compute station metrics, and plot them.
 
+**Official station dashboard:** CoCoRaHS publishes a public page for this station on its Data Explorer (DEX): <https://dex.cocorahs.org/stations/FL-SM-38/>. It is the reference view of the station's record, and its information and data can be pulled at any time. How this repo will build on it is still undecided.
+
 > This repo replaces the older [dgilford/cocorahs](https://github.com/dgilford/cocorahs).
 
 ## Contents
